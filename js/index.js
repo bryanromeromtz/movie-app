@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const cards = new Cards();
     // llamado a las funciones de las clases
     carousel.showCarouselInfo();
-    cards.getMoviesPreviews();
+    cards.getMoviesExample();
 
 
     const btn = document.getElementById("btn-search");

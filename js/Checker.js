@@ -1,9 +1,13 @@
+import Request from "./Request.js";
+
 class Checker {
 
     verifyInput(input) {
         if (input.value.length > 0) {
             input.classList.remove("is-invalid");
             input.classList.add("is-valid");
+            const request = new Request();
+            request.getDataMovies(input.value);
         }
         else {
             this.getErrorContainer("This field is required");
